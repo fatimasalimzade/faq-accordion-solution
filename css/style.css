@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Work Sans", sans-serif;
+    background-image: url(../assets/images/background-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: hsl(275, 100%, 97%);
+}
+.container {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    width: 30%;
+    padding: 40px;
+}
+
+.container .box {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(205, 205, 205);
+    cursor: pointer;
+}
+
+.container .box .icon h4:hover {
+    color: hsl(280.92deg 82.98% 53.92%);
+}
+
+.container .icon {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .head {
+    display: flex;
+}
+
+.container .head img {
+    padding-right: 10px;
+}
+
+.answer {
+    display: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h1, h4 {
+    color: hsl(292, 42%, 14%);
+}
+
+p {
+    color: hsl(292, 16%, 49%);
+}
+
+@media (max-width: 480px){
+    .wrapper{
+        background-image: url(../assets/images/background-pattern-mobile.svg);
+    }
+
+    .container{
+        width: 90%;
+    }
+}
+
+@media (max-width: 1024px){
+    .wrapper{
+        background-image: url(../assets/images/background-pattern-mobile.svg);
+    }
+
+    .container{
+        width: 80%;
+    }
+}
